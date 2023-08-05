@@ -18,11 +18,12 @@ set $menu wofi --show drun --style ~/.config/wofi/style.css | xargs swaymsg exec
 ### Wallpaper
 output DP-1 {
     bg ~/.config/sway/backgrounds/celeste-1.png fill
-    pos 0 2000
+    pos 0 1000
 }
 output DP-2 {
     bg "#311C39" solid_color
-    pos 2550 0
+    transform 90
+    pos 2560 0
 }
 
 
