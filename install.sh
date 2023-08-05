@@ -1,2 +1,2 @@
-find . -maxdepth 1 -not -iname ".*" -execdir cp -r {} ~/.config \;
+find . -maxdepth 1 -type d -not -iname ".*" -exec ln -s $PWD/{} ~/.config \;
 

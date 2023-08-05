@@ -1,0 +1,29 @@
+@define-color bg #ffffff
+
+window {
+
+}
+
+#inner-box {
+
+}
+
+#outer-box {
+  background-color: @bg;
+}
+
+#input {
+
+}
+
+#text {
+
+}
+
+#entry {
+
+}
+
+#entry:selected {
+
+}
