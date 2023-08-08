@@ -13,7 +13,7 @@ set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi --show drun --style ~/.config/wofi/style.css | xargs swaymsg exec --
+set $menu anyrun | xargs swaymsg exec --
 
 ### Wallpaper
 output DP-1 {

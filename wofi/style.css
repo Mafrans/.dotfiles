@@ -1,4 +1,4 @@
-@define-color bg transparent;
+@define-color bg #18181B;
 @define-color text #FFFFFF;
 @define-color input #3F3F46;
 @define-color entry #27272A;
@@ -13,7 +13,7 @@ window {
 
 #outer-box {
   animation: outer-box 0.5s cubic-bezier(0.33, 1, 0.68, 1) both;
-  padding: 1rem;
+  padding: 4rem 3rem;
   border-radius: 0.5rem;
 
   background: @bg;
