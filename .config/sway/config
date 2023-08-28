@@ -21,8 +21,7 @@ workspace 1 output eDP-1
 
 ### Wallpaper
 output eDP-1 {
-    # bg ~/.config/sway/backgrounds/celeste-1.png fill
-    bg ~/.config/sway/backgrounds/getting-over-it-1.jpg fill
+    bg ~/.config/sway/backgrounds/celeste-1.png fill
     scale 1.5
 }
 
