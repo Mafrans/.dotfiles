@@ -1,0 +1,124 @@
+@import "../colorscheme/tailwind.css";
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FiraCode Nerd Font;
+}
+
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+    font-size: 14px;
+}
+
+window#waybar > box {
+    margin: 6px;
+    background-color: @slate900;
+    border-radius: 999px;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+button {
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+#workspaces {
+    padding: 0 12px;
+}
+
+#workspaces button {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 6px;
+    background-color: transparent;
+    color: @slate600;
+    transition: color 0.125s ease-out;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    border-color: transparent;
+    color: @slate500;
+}
+
+#workspaces button.focused,
+#workspaces button.focused:hover {
+    color: @violet400;
+    font-weight: 900;
+}
+
+#workspaces button.urgent {
+}
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#language,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#mpd {
+    font-size: 13px;
+    padding: 0 16px;
+    color: #ffffff;
+}
+
+#scratchpad {
+    padding: 0 8px;
+    font-weight: 900;
+}
+
+#scratchpad.empty {
+    font-weight: 400;
+    color: @slate500;
+}
+
+#tray {
+    padding: 0 24px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}

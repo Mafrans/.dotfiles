@@ -13,7 +13,12 @@ set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu anyrun | xargs swaymsg exec --
+set $menu tofi-drun | xargs swaymsg exec --
+
+gaps inner 6
+
+workspace 1 output DP-2
+workspace 2 output DP-2
 
 ### Wallpaper
 output DP-1 {
@@ -51,6 +56,12 @@ output DP-2 {
 for_window [app_id="org.gnome.Settings"] floating enable
 for_window [class="discord"] floating enable
 for_window [class="Steam"] floating enable
+for_window [instance="Godot_ProjectList"] floating enable
+for_window [title="Save Scene As..."] floating enable
+
+for_window [app_id=".*"] {
+    border default 0
+}
 
 ### Clipboard
 exec wl-paste -t text --watch clipman store --no-persist
