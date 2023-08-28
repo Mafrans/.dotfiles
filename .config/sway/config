@@ -24,8 +24,9 @@ gaps inner 0
 workspace 1 output eDP-1
 
 ### Wallpaper
-output DP-1 {
+output eDP-1 {
     bg $background fill
+    scale 1.5
 }
 
 exec 'LD_LIBRARY_PATH="/usr/local/lib" walker --gapplication-service'
