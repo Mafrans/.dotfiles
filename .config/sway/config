@@ -64,6 +64,16 @@ client.background #b19676 #b19676 #9a3412
 client.unfocused #b19676 #b19676 #9a3412
 client.focused #fed7aa #fed7aa #9a3412
 
+# Godot Windows
+for_window [instance="Godot_ProjectList"] floating enable
+for_window [title="Save Scene As..."] floating enable
+for_window [title="Please Confirm..."] floating enable
+for_window [title="Create Folder"] floating enable
+for_window [title="Create New Node"] floating enable
+for_window [title="Create Script"] floating enable
+for_window [title="Inherit Object"] floating enable
+
+
 ### Clipboard
 exec wl-paste -t text --watch clipman store --no-persist
 
@@ -95,10 +105,11 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec $menu
 # Take a screenshot
 bindsym $mod+Shift+s exec grimblast copy area
-bindsym $mod+Ctrl+s exec slurp -p | grim -g - - | convert - txt: | awk 'NR==2 { print $3 }' | wl-copy
+bindsym $mod+Shift+a exec grimblast copy screen
+bindsym $mod+Ctrl+s exec slurp -p | grim -g - - | convert - txt: | awk 'NR==2 { print $3 }' | wl-copy -n
 # Switch keyboard layout
-# bindsym $mod+Space input type:keyboard xkb_switch_layout next
-bindsym $mod+Period exec cat ~/.config/sway/emojis.txt | rofi -show -dmenu -theme Arc-Dark | sed 's/ .*//' | wl-copy -n
+bindsym $mod+Space input type:keyboard xkb_switch_layout next
+bindsym $mod+Period exec cat ~/.config/sway/emojis.txt | tofi --font="FiraCode Nerd Font" | sed 's/ .*//' | wl-copy -n
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
