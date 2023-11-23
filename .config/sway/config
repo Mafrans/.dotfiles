@@ -59,11 +59,6 @@ for_window [app_id=".*"] {
     border default 0
 }
 
-client.focused_inactive #b19676 #b19676 #9a3412
-client.background #b19676 #b19676 #9a3412
-client.unfocused #b19676 #b19676 #9a3412
-client.focused #fed7aa #fed7aa #9a3412
-
 # Godot Windows
 for_window [instance="Godot_ProjectList"] floating enable
 for_window [title="Save Scene As..."] floating enable
