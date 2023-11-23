@@ -97,6 +97,16 @@ client.background #1e293b #1e293b #64748b
 client.unfocused #1e293b #1e293b #64748b
 client.focused #475569 #475569 #f1f5f9
 
+# Godot Windows
+for_window [instance="Godot_ProjectList"] floating enable
+for_window [title="Save Scene As..."] floating enable
+for_window [title="Please Confirm..."] floating enable
+for_window [title="Create Folder"] floating enable
+for_window [title="Create New Node"] floating enable
+for_window [title="Create Script"] floating enable
+for_window [title="Inherit Object"] floating enable
+
+
 ### Clipboard
 exec wl-paste -t text --watch clipman store --no-persist
 
