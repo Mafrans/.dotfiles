@@ -8,7 +8,7 @@
 
 window#waybar {
     background-color: transparent;
-    color: #ffffff;
+    color: @orange800;
     transition-property: background-color;
     transition-duration: .5s;
     font-size: 14px;
@@ -16,7 +16,7 @@ window#waybar {
 
 window#waybar > box {
     margin: 6px;
-    background-color: @slate900;
+    background-color: @yellow200;
     border-radius: 999px;
 }
 
@@ -53,19 +53,19 @@ button:hover {
     font-weight: 400;
     margin: 6px;
     background-color: transparent;
-    color: @slate600;
+    color: @orange300;
     transition: color 0.125s ease-out;
 }
 
 #workspaces button:hover {
     background: transparent;
     border-color: transparent;
-    color: @slate500;
+    color: @orange400;
 }
 
 #workspaces button.focused,
 #workspaces button.focused:hover {
-    color: @violet400;
+    color: @orange700;
     font-weight: 900;
 }
 
@@ -73,8 +73,8 @@ button:hover {
 }
 
 #mode {
-    background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
+    background-color: @orange300;
+    border-bottom: 3px solid @orange800;
 }
 
 #clock,
@@ -96,7 +96,7 @@ button:hover {
 #mpd {
     font-size: 13px;
     padding: 0 16px;
-    color: #ffffff;
+    color: @orange800;
 }
 
 #scratchpad {
@@ -106,11 +106,15 @@ button:hover {
 
 #scratchpad.empty {
     font-weight: 400;
-    color: @slate500;
+    color: @orange400;
+}
+
+.modules-right {
+    padding-right: 24px;
 }
 
 #tray {
-    padding: 0 24px;
+    padding-left: 24px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */

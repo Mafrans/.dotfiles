@@ -17,12 +17,12 @@ set $menu tofi-drun | xargs swaymsg exec --
 
 gaps inner 6
 
-workspace 1 output DP-2
-workspace 2 output DP-2
+workspace 1 output eDP-1
 
 ### Wallpaper
 output eDP-1 {
-    bg ~/.config/sway/backgrounds/celeste-1.png fill
+    # bg ~/.config/sway/backgrounds/celeste-1.png fill
+    bg ~/.config/sway/backgrounds/getting-over-it-1.jpg fill
     scale 1.5
 }
 
@@ -53,10 +53,16 @@ for_window [class="discord"] floating enable
 for_window [class="Steam"] floating enable
 for_window [instance="Godot_ProjectList"] floating enable
 for_window [title="Save Scene As..."] floating enable
+for_window [class="ONLYOFFICE Desktop Editors"] floating enable
 
 for_window [app_id=".*"] {
     border default 0
 }
+
+client.focused_inactive #b19676 #b19676 #9a3412
+client.background #b19676 #b19676 #9a3412
+client.unfocused #b19676 #b19676 #9a3412
+client.focused #fed7aa #fed7aa #9a3412
 
 ### Clipboard
 exec wl-paste -t text --watch clipman store --no-persist
