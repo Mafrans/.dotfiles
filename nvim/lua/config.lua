@@ -1,5 +1,6 @@
 local opt = vim.opt
 local keymap = vim.keymap
+local trouble = require("trouble")
 
 -- set leader to space
 vim.g.mapleader = " "
@@ -19,6 +20,7 @@ opt.expandtab = true
 opt.wildignore = { "*/cache/*", "*/tmp/*", "*/node_modules/*", "*/dist/*" }
 
 -- keybindings
+keymap.set("t", "<Esc>", "<C-\\><C-n>")
 keymap.set("i", "jj", "<Esc>")
 keymap.set("n", "<c-t>", ":tabe<CR>")
 keymap.set("n", "<c-j>", ":BufferPrevious<cr>")
@@ -42,3 +44,9 @@ keymap.set("n", ";nn", ":NERDTree<cr>")
 keymap.set("n", ";nt", ":NERDTreeToggle<cr>")
 keymap.set("n", ";nf", ":NERDTreeFind<cr>")
 keymap.set("n", "<C-_>", "<plug>NERDCommenterToggle<cr>")
+keymap.set("n", ";xx", function() trouble.toggle() end)
+keymap.set("n", ";xw", function() trouble.toggle("workspace_diagnostics") end)
+keymap.set("n", ";xd", function() trouble.toggle("document_diagnostics") end)
+keymap.set("n", ";xq", function() trouble.toggle("quickfix") end)
+keymap.set("n", ";xl", function() trouble.toggle("loclist") end)
+keymap.set("n", "gR", function() trouble.toggle("lsp_references") end)

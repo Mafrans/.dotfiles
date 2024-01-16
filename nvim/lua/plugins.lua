@@ -14,7 +14,7 @@ lazy.setup({
     { "preservim/nerdcommenter" },
     { "Xuyuanp/nerdtree-git-plugin" },
     {
-        "kyazdani42/nvim-web-devicons",
+        "nvim-tree/nvim-web-devicons",
         config = deviconsConfig
     },
     { "hrsh7th/cmp-nvim-lsp" },
@@ -46,7 +46,10 @@ lazy.setup({
         cmd = "TSUpdate",
         config = treesitterConfig
     },
-    { "folke/trouble.nvim" },
+    { 
+        "folke/trouble.nvim", 
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
     { "nvim-lua/plenary.nvim" },
     { "lewis6991/gitsigns.nvim" },
     { "nvim-telescope/telescope.nvim" },

@@ -1,11 +1,3 @@
-local LSPServers = {
-    "tsserver",
-    "tailwindcss",
-    "intelephense",
-    "gopls"
-};
-
-
 return function()
     local lspconfig = require "lspconfig"
     local cmpnvimlsp = require "cmp_nvim_lsp"
@@ -13,7 +5,12 @@ return function()
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities = cmpnvimlsp.default_capabilities(capabilities)
 
-    for _, lsp in ipairs(LSPServers) do
-        lspconfig[lsp].setup({ capabilities = capabilities })
-    end
+    lspconfig.tsserver.setup{capabilities=capabilities}
+    lspconfig.tailwindcss.setup{capabilities=capabilities}
+    lspconfig.intelephense.setup{capabilities=capabilities}
+    lspconfig.gopls.setup{capabilities=capabilities}
+    lspconfig.java_language_server.setup{
+      capabilities=capabilities,
+      cmd={"java-language-server"}
+    }
 end
