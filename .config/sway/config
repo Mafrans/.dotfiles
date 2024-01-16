@@ -73,6 +73,10 @@ for_window [title="Create New Node"] floating enable
 for_window [title="Create Script"] floating enable
 for_window [title="Inherit Object"] floating enable
 
+client.focused_inactive #b19676 #b19676 #9a3412
+client.background #b19676 #b19676 #9a3412
+client.unfocused #b19676 #b19676 #9a3412
+client.focused #fed7aa #fed7aa #9a3412
 
 ### Clipboard
 exec wl-paste -t text --watch clipman store --no-persist
