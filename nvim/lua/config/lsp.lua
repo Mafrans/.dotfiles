@@ -5,6 +5,7 @@ return function()
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities = cmpnvimlsp.default_capabilities(capabilities)
 
+    lspconfig.pyright.setup{capabilities=capabilities}
     lspconfig.tsserver.setup{capabilities=capabilities}
     lspconfig.tailwindcss.setup{capabilities=capabilities}
     lspconfig.intelephense.setup{capabilities=capabilities}
