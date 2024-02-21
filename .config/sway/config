@@ -18,13 +18,11 @@ set $menu tofi-drun | xargs swaymsg exec --
 gaps inner 6
 
 workspace 1 output DP-1
-workspace 2 output DP-2
 
 ### Wallpaper
-output eDP-1 {
+output DP-1 {
     # bg ~/.config/sway/backgrounds/celeste-1.png fill
     bg ~/.config/sway/backgrounds/getting-over-it-1.jpg fill
-    scale 1.5
 }
 
 
