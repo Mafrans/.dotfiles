@@ -79,7 +79,7 @@ exec wl-paste -t text --watch clipman store --no-persist
 
 ### Input devices
 input "type:keyboard" {
-    xkb_layout us,se
+    xkb_layout eu,us,se
 }
 
 
