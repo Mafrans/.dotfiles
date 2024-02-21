@@ -69,7 +69,7 @@ exec wl-paste -t text --watch clipman store --no-persist
 
 ### Input devices
 input "type:keyboard" {
-    xkb_layout us,se
+    xkb_layout eu,us,se
 }
 
 
@@ -97,7 +97,7 @@ bindsym $mod+d exec $menu
 bindsym $mod+Shift+s exec grimblast copy area
 bindsym $mod+Ctrl+s exec slurp -p | grim -g - - | convert - txt: | awk 'NR==2 { print $3 }' | wl-copy
 # Switch keyboard layout
-bindsym $mod+Space input type:keyboard xkb_switch_layout next
+# bindsym $mod+Space input type:keyboard xkb_switch_layout next
 bindsym $mod+Period exec cat ~/.config/sway/emojis.txt | rofi -show -dmenu -theme Arc-Dark | sed 's/ .*//' | wl-copy -n
 
 # Drag floating windows by holding down $mod and left mouse button.
