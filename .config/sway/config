@@ -92,11 +92,6 @@ for_window [title="Create New Node"] floating enable
 for_window [title="Create Script"] floating enable
 for_window [title="Inherit Object"] floating enable
 
-client.focused_inactive #1e293b #1e293b #64748b
-client.background #1e293b #1e293b #64748b
-client.unfocused #1e293b #1e293b #64748b
-client.focused #475569 #475569 #f1f5f9
-
 # Godot Windows
 for_window [instance="Godot_ProjectList"] floating enable
 for_window [title="Save Scene As..."] floating enable
@@ -106,6 +101,14 @@ for_window [title="Create New Node"] floating enable
 for_window [title="Create Script"] floating enable
 for_window [title="Inherit Object"] floating enable
 
+client.focused_inactive #b19676 #b19676 #9a3412
+client.background #b19676 #b19676 #9a3412
+client.unfocused #b19676 #b19676 #9a3412
+client.focused #fed7aa #fed7aa #9a3412
+client.focused_inactive #4c1d95 #4c1d95 #8b5cf6
+client.background #4c1d95 #4c1d95 #8b5cf6
+client.unfocused #4c1d95 #4c1d95 #8b5cf6
+client.focused #6d28d9 #6d28d9 #ede9fe
 
 ### Clipboard
 exec wl-paste -t text --watch clipman store --no-persist
