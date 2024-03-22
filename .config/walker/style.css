@@ -1,0 +1,57 @@
+@import "../colors.css";
+
+* {
+  font-family: Fira Code;
+}
+
+#window {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#box {
+  background: transparent;
+}
+
+#search {
+  background: @slate700;
+  color: @slate50;
+  padding: 0.5em 1em;
+  border: none;
+  outline: none;
+  border-radius: 0.25em;
+}
+
+#search placeholder {
+  opacity: 1;
+}
+
+#list {
+  margin-top: 0.5em;
+  border-radius: 0.25em;
+  background: @slate800;
+}
+
+.item {
+  padding: 0.5em;
+}
+
+*:selected {
+  background: @slate700;
+}
+
+.icon {
+  margin-right: 1em;
+}
+
+.textwrapper {
+  margin-top: -0.1em;
+}
+
+.label {
+  color: @slate50;
+}
+
+.sub {
+  color: @slate500;
+  font-size: 0.9em;
+}

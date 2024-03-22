@@ -1,4 +1,5 @@
 
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -13,19 +14,36 @@ set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu tofi-drun | xargs swaymsg exec --
 
-gaps inner 6
+#set $menu tofi-drun | xargs swaymsg exec --
+set $menu LD_LIBRARY_PATH="/usr/local/lib" walker 
+set $background ~/.config/sway/backgrounds/celeste-1.png
+
+gaps inner 0
 
 workspace 1 output DP-1
 
 ### Wallpaper
 output DP-1 {
-    # bg ~/.config/sway/backgrounds/celeste-1.png fill
-    bg ~/.config/sway/backgrounds/getting-over-it-1.jpg fill
+    bg $background fill
 }
 
+exec 'LD_LIBRARY_PATH="/usr/local/lib" walker --gapplication-service'
 
+exec swayidle -w \
+  timeout 240 "$lock" \
+  before-sleep "$lock"
+
+### Walker service
+
+set $lock swaylock --grace 10 --datestr "%m/%d/%Y" \
+            --screenshots --effect-blur 30x2 --effect-vignette 0.6:0.4 \
+            --clock --indicator-idle-visible --font 'FiraCode Nerd Font' --font-size 20 \
+            --bs-hl-color  FF5555   --key-hl-color     50FA7B   --indicator-thickness 25 --indicator-radius 110 \
+            --inside-color 00000000 --inside-ver-color 00000000 --inside-wrong-color 00000000 \
+            --line-color   00000000 --line-ver-color   00000000 --line-wrong-color   00000000 --separator-color 00000000 \
+            --ring-color   50FA7B60 --ring-ver-color   BD93F960 --ring-wrong-color   FF555560 \
+            --text-color   FFFFFF   --text-ver-color   BD93F9   --text-wrong-color   FF5555 --layout-bg-color 00000000
 #
 # Example configuration:
 #
@@ -38,8 +56,8 @@ output DP-1 {
 # Example configuration:
 #
 # exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+#          timeout 10 'swaylock -f -c 000000' \
+##          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
 #          before-sleep 'swaylock -f -c 000000'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
@@ -53,6 +71,12 @@ for_window [class="Steam"] floating enable
 for_window [instance="Godot_ProjectList"] floating enable
 for_window [title="Save Scene As..."] floating enable
 for_window [class="ONLYOFFICE Desktop Editors"] floating enable
+for_window [class="qBittorrent"] floating enable
+for_window [class="FLTK"] floating enable
+for_window [class="Tk"] floating enable
+for_window [app_id="pavucontrol"] floating enable
+for_window [title="Bitwarden"] floating enable
+for_window [title="Picture in picture"] floating enable
 
 for_window [app_id=".*"] {
     border default 0
@@ -67,19 +91,24 @@ for_window [title="Create New Node"] floating enable
 for_window [title="Create Script"] floating enable
 for_window [title="Inherit Object"] floating enable
 
-client.focused_inactive #b19676 #b19676 #9a3412
-client.background #b19676 #b19676 #9a3412
-client.unfocused #b19676 #b19676 #9a3412
-client.focused #fed7aa #fed7aa #9a3412
+client.focused_inactive #4c1d95 #4c1d95 #8b5cf6
+client.background #4c1d95 #4c1d95 #8b5cf6
+client.unfocused #4c1d95 #4c1d95 #8b5cf6
+client.focused #6d28d9 #6d28d9 #ede9fe
 
 ### Clipboard
 exec wl-paste -t text --watch clipman store --no-persist
+
 
 ### Input devices
 input "type:keyboard" {
     xkb_layout eu,us,se
 }
 
+input "type:pointer" {
+    pointer_accel 0.25
+    accel_profile flat
+}
 
 input "type:touchpad" {
     click_method clickfinger
@@ -108,6 +137,7 @@ bindsym $mod+Ctrl+s exec slurp -p | grim -g - - | convert - txt: | awk 'NR==2 { 
 # Switch keyboard layout
 bindsym $mod+Space input type:keyboard xkb_switch_layout next
 bindsym $mod+Period exec cat ~/.config/sway/emojis.txt | tofi --font="FiraCode Nerd Font" | sed 's/ .*//' | wl-copy -n
+bindsym $mod+Ctrl+l exec $lock
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
