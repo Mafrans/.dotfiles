@@ -1,0 +1,44 @@
+{
+  "terminal": "kitty",
+  "placeholder": "Search...",
+  "shell_config": "/home/malte/.zshrc",
+  "keep_open": false,
+  "notify_on_fail": true,
+  "fullscreen": true,
+  "search": {
+    "delay": 0
+  },
+  "align": {
+    "width": 400,
+    "horizontal": "center",
+    "vertical": "start",
+    "margins": {
+      "top": 300,
+      "bottom": 0,
+      "end": 0,
+      "start": 0
+    }
+  },
+  "list": {
+    "height": 300
+  },
+  "orientation": "vertical",
+  "icons": {
+    "hide": false,
+    "size": 38
+  },
+  "modules": [
+    {
+      "name": "runner",
+      "prefix": "!"
+    },
+    {
+      "name": "applications",
+      "prefix": ""
+    },
+    {
+      "name": "websearch",
+      "prefix": "?"
+    }
+  ]
+}
