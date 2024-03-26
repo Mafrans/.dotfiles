@@ -15,9 +15,9 @@ window#waybar {
 }
 
 window#waybar > box {
-    margin: 6px;
-    background-color: @violet900;
-    border-radius: 999px;
+    background-color: @slate900;
+    /* margin: 6px; */
+    /* border-radius: 999px; */
 }
 
 window#waybar.hidden {
@@ -44,7 +44,7 @@ button:hover {
 }
 
 #workspaces {
-    padding: 0 12px;
+    padding: 0 6px;
 }
 
 #workspaces button {
@@ -53,19 +53,19 @@ button:hover {
     font-weight: 400;
     margin: 6px;
     background-color: transparent;
-    color: @violet600;
+    color: @slate800;
     transition: color 0.125s ease-out;
 }
 
 #workspaces button:hover {
     background: transparent;
     border-color: transparent;
-    color: @violet700;
+    color: @slate700;
 }
 
 #workspaces button.focused,
 #workspaces button.focused:hover {
-    color: @pink400;
+    color: @pink500;
     font-weight: 900;
 }
 
@@ -95,18 +95,19 @@ button:hover {
 #scratchpad,
 #mpd {
     font-size: 13px;
-    padding: 0 16px;
-    color: @pink300;
+    padding-left: 26px;
+    padding-right: 6px;
+    color: @pink400;
 }
 
 #scratchpad {
-    padding: 0 8px;
+    padding: 0 6px;
     font-weight: 900;
 }
 
 #scratchpad.empty {
     font-weight: 400;
-    color: @orange400;
+    color: @pink900;
 }
 
 .modules-right {

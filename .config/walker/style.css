@@ -1,7 +1,7 @@
 @import "../colors.css";
 
 * {
-  font-family: Fira Code;
+  font-family: FiraCode Nerd Font;
 }
 
 #window {
@@ -26,7 +26,7 @@
 }
 
 #list {
-  margin-top: 0.5em;
+  margin-top: 1.5em;
   border-radius: 0.25em;
   background: @slate800;
 }

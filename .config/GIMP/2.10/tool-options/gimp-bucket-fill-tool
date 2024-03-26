@@ -1,0 +1,9 @@
+# GIMP gimp-bucket-fill-tool options
+
+(pattern "Clipboard Image")
+(brush-size 51)
+(brush-hardness 0.5)
+(fill-mode pattern)
+(threshold 17)
+
+# end of gimp-bucket-fill-tool options
