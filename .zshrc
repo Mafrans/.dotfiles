@@ -1,6 +1,8 @@
 # Environment
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
 export LD_LIBRARY_PATH="/usr/local/lib"
+export MPLBACKEND=module://matplotlib-backend-kitty
+export PYTHONPATH="$PYTHONPATH:/home/malte/python-modules"
 
 # Aliases
 alias s="kitten ssh"

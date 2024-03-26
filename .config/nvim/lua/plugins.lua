@@ -3,11 +3,17 @@ local cmpConfig = require "config.cmp"
 local lspConfig = require "config.lsp"
 local deviconsConfig = require "config.devicons"
 local treesitterConfig = require "config.treesitter"
+local signatureConfig = require "config.signature"
 
 lazy.setup({
     {
         "neovim/nvim-lspconfig",
         config = cmpConfig
+    },
+    { 
+      "ray-x/lsp_signature.nvim",
+      event = "VeryLazy",
+      config = signatureConfig,
     },
     { "hoob3rt/lualine.nvim" },
     { "preservim/nerdtree" },
@@ -33,7 +39,7 @@ lazy.setup({
     },
     {
         "Mofiqul/dracula.nvim",
-	lazy = false
+        lazy = false
     },
     { "folke/twilight.nvim" },
     { "norcalli/nvim-colorizer.lua" },
