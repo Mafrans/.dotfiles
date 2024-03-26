@@ -48,3 +48,4 @@ bindkey -e            '^[[B'    menu-select           # downarrow
 bindkey -M menuselect '\t'      menu-complete         # tab (menuselect)
 bindkey -M menuselect '^[[Z'    reverse-menu-complete # shift+tab (menuselect)
 
+
