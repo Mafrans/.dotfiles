@@ -1921,3 +1921,6 @@
 ψ psi
 Ω OMEGA
 ω omega
+• bullet
+— emdash
+– endash
