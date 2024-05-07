@@ -12,7 +12,8 @@
   },
   "search": {
     "delay": 0,
-    "hide_icons": false
+    "hide_icons": true,
+    "hide_spinner": true
   },
   "runner": {
     "excludes": ["rm"]

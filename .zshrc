@@ -1,6 +1,7 @@
 # Environment
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
 export LD_LIBRARY_PATH="/usr/local/lib"
+export NNN_PLUG="f:fzopen;v:preview-tabbed;p:mocq"
 
 # Aliases
 alias s="kitten ssh"
