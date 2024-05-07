@@ -26,8 +26,8 @@
 }
 
 #list {
-  margin-top: 1.5em;
   border-radius: 0.25em;
+  margin-top: 1.5em;
   background: @slate800;
 }
 
@@ -35,8 +35,16 @@
   padding: 0.5em;
 }
 
+.activationlabel {
+  color: @slate500;
+}
+
 *:selected {
   background: @slate700;
+}
+
+*:selected .activationlabel {
+  color: @slate400;
 }
 
 .icon {
