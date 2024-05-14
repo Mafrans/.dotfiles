@@ -31,6 +31,8 @@ lazy.setup({
         "hrsh7th/nvim-cmp",
         config = lspConfig
     },
+    { "nvarner/typst-lsp" },
+    { "kaarmu/typst.vim", ft="typst", lazy=false },
     { "L3MON4D3/LuaSnip" },
     { "saadparwaiz1/cmp_luasnip" },
     {
