@@ -5,6 +5,13 @@ return function()
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities = cmpnvimlsp.default_capabilities(capabilities)
 
+    lspconfig.typst_lsp.setup{
+      capabilities=capabilities,
+      settings={
+        filetypes={"typst", "typ"},
+        exportPdf="onType"
+      }
+    }
     lspconfig.pyright.setup{capabilities=capabilities}
     lspconfig.tsserver.setup{capabilities=capabilities}
     lspconfig.tailwindcss.setup{capabilities=capabilities}
