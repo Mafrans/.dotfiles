@@ -16,7 +16,7 @@ set $term kitty
 # on the original workspace that the command was run on.
 
 #set $menu tofi-drun | xargs swaymsg exec --
-set $menu LD_LIBRARY_PATH="/usr/local/lib" walker 
+set $menu LD_LIBRARY_PATH="/usr/local/lib" walker -n
 set $background ~/.config/sway/backgrounds/celeste-1.png
 
 gaps inner 0
@@ -30,7 +30,8 @@ output eDP-1 {
 }
 
 # autostart
-exec "avizo-service"
+exec 'avizo-service'
+#exec '/home/malte/.asdf/shims/sway-indicators daemon'
 exec 'dex -a'
 exec 'LD_LIBRARY_PATH="/usr/local/lib" walker --gapplication-service'
 
@@ -97,6 +98,9 @@ for_window [title="Create New Node"] floating enable
 for_window [title="Create Script"] floating enable
 for_window [title="Inherit Object"] floating enable
 
+# Proton VPN popup is always in scratchpad
+for_window [app_id="protonvpn-app"] move scratchpad
+
 # Godot Windows
 for_window [instance="Godot_ProjectList"] floating enable
 for_window [title="Save Scene As..."] floating enable
@@ -110,15 +114,6 @@ client.focused_inactive #1e293b #1e293b #64748b
 client.background       #1e293b #1e293b #64748b
 client.unfocused        #1e293b #1e293b #64748b
 client.focused          #475569 #475569 #f1f5f9
-
-# Godot Windows
-for_window [instance="Godot_ProjectList"] floating enable
-for_window [title="Save Scene As..."] floating enable
-for_window [title="Please Confirm..."] floating enable
-for_window [title="Create Folder"] floating enable
-for_window [title="Create New Node"] floating enable
-for_window [title="Create Script"] floating enable
-for_window [title="Inherit Object"] floating enable
 
 
 ### Clipboard
@@ -144,6 +139,8 @@ input "type:touchpad" {
 
 ### Key bindings
 
+#bindsym XF86AudioRaiseVolume exec /home/malte/.asdf/shims/sway-indicators audio add 5
+#bindsym XF86AudioLowerVolume exec /home/malte/.asdf/shims/sway-indicators audio add -5
 bindsym XF86AudioRaiseVolume exec volumectl -u up
 bindsym XF86AudioLowerVolume exec volumectl -u down
 bindsym XF86AudioMute exec volumectl toggle-mute
@@ -167,7 +164,7 @@ bindsym $mod+Shift+a exec grimblast copy screen
 bindsym $mod+Ctrl+s exec slurp -p | grim -g - - | convert - txt: | awk 'NR==2 { print $3 }' | wl-copy -n
 # Switch keyboard layout
 bindsym $mod+Space input type:keyboard xkb_switch_layout next
-bindsym $mod+Period exec cat ~/.config/sway/emojis.txt | tofi --font="FiraCode Nerd Font" | sed 's/ .*//' | wl-copy -n
+bindsym $mod+Period exec cat ~/tables/emojis.txt | tofi --font="FiraCode Nerd Font" | sed 's/ .*//' | wl-copy -n
 bindsym $mod+Ctrl+l exec $lock
 
 # Drag floating windows by holding down $mod and left mouse button.
@@ -182,7 +179,7 @@ bindsym $mod+Shift+r reload
 
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
-    
+
 # Move your focus around
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
@@ -202,7 +199,7 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
-    
+
 # Switch to workspace
 bindsym $mod+1 workspace number 1
 bindsym $mod+2 workspace number 2

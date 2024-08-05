@@ -9,9 +9,14 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 # Aliases
 alias s="kitten ssh"
 alias icat="kitten icat"
+alias rg="rg --hyperlink-format=kitty"
 alias ls="ls -a"
 alias ll="ls -la"
-files() { nautilus "$@" & }
+alias vpnport="~/scripts/natpmpc_script.sh"
+alias rm="trash"
+alias nethack="kitty -o window_margin_width=16 -o font_family=\"Mx437 IBM VGA 9x16\" luit -encoding 'CP437' nethack -ibm"
+alias files="gtk-launch org.gnome.Nautilus"
+
 
 # Plugins
 
