@@ -32,6 +32,7 @@ exec 'avizo-service'
 #exec '/home/malte/.asdf/shims/sway-indicators daemon'
 exec 'dex -a'
 exec 'LD_LIBRARY_PATH="/usr/local/lib" walker --gapplication-service'
+exec 'nmcli con up id "ProtonVPN SE"'
 
 exec swayidle -w \
   timeout 240 "$lock" \
@@ -156,7 +157,7 @@ bindsym $mod+Shift+q kill
 # Start launcher
 bindsym $mod+d exec $menu
 # Take a screenshot
-bindsym $mod+Shift+s exec grimblast copy area
+bindsym $mod+Shift+s exec grimblast copy area --freeze
 bindsym $mod+Shift+a exec grimblast copy screen
 bindsym $mod+Ctrl+s exec slurp -p | grim -g - - | convert - txt: | awk 'NR==2 { print $3 }' | wl-copy -n
 # Switch keyboard layout
