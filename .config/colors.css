@@ -1,3 +1,5 @@
+
+/* Legacy @define-color syntax, for gtk2 and 3 */
 @define-color slate50 #f8fafc;
 @define-color slate100 #f1f5f9;
 @define-color slate200 #e2e8f0;
