@@ -23,9 +23,8 @@ gaps inner 0
 workspace 1 output eDP-1
 
 ### Wallpaper
-output eDP-1 {
+output DP-2 {
     bg $background fill
-    scale 1.5
 }
 
 # autostart
