@@ -1,11 +1,11 @@
 # GIMP gimp-perspective-clone-tool options
 
-(foreground (color-rgb 0.33333333333333331 0.78823529411764703 0.82745098039215681))
+(background (color-rgb 0.023529411764705882 0 0))
 (brush "2. Hardness 025")
 (dynamics "Dynamics Off")
 (pattern "Clipboard Image")
 (palette "Standard")
-(brush-size 52)
+(brush-size 12)
 (brush-spacing 0.050000000000000003)
 (brush-hardness 0.25)
 (brush-force 0.46999999999999997)

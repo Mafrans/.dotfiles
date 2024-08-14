@@ -7,9 +7,11 @@ return function()
 
     lspconfig.typst_lsp.setup{
       capabilities=capabilities,
+      single_file_support = true,
+      formatter="on",
       settings={
         filetypes={"typst", "typ"},
-        exportPdf="onType"
+        exportPdf="onType",
       }
     }
     lspconfig.pyright.setup{capabilities=capabilities}

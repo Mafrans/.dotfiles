@@ -7,7 +7,7 @@ local treesitterConfig = require "config.treesitter"
 lazy.setup({
     {
         "neovim/nvim-lspconfig",
-        config = cmpConfig
+        config = lspConfig
     },
     { "hoob3rt/lualine.nvim" },
     { "preservim/nerdtree" },
@@ -23,16 +23,12 @@ lazy.setup({
     { "hrsh7th/cmp-cmdline" },
     {
         "hrsh7th/nvim-cmp",
-        config = lspConfig
+        config = cmpConfig
     },
     { "nvarner/typst-lsp" },
     { "kaarmu/typst.vim", ft="typst", lazy=false },
     { "L3MON4D3/LuaSnip" },
     { "saadparwaiz1/cmp_luasnip" },
-    {
-        "rakr/vim-one",
-        lazy = false
-    },
     {
         "Mofiqul/dracula.nvim",
 	lazy = false
@@ -62,6 +58,5 @@ lazy.setup({
     {
         "zbirenbaum/copilot-cmp",
         after = { "copilot.lua", "nvim-cmp" },
-    },
-    { "Thyrum/vim-stabs" }
+    }
 })

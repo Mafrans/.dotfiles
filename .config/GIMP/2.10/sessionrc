@@ -23,7 +23,7 @@
     (gimp-dock
         (side right)
         (book
-            (current-page 0)
+            (current-page 2)
             (dockable "gimp-color-editor"
                 (tab-style automatic)
                 (aux-info
@@ -94,7 +94,7 @@
     (position 308 0))
 (session-info "toplevel"
     (factory-entry "gimp-operation-tool-dialog")
-    (position 1518 93))
+    (position 1596 715))
 (session-info "toplevel"
     (factory-entry "gimp-threshold-tool-dialog")
     (position 467 474))

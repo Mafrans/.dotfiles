@@ -1426,7 +1426,7 @@
   <resource identifier="${gimp_data_dir}/gradients/Yellow_Orange.ggr" checksum="428584726006e23e260baa2a7d79f295">
   </resource>
 
-  <resource identifier="gimp-palette-color-history" checksum="e7a8cdaafaa8ab912697bd628c41704c">
+  <resource identifier="gimp-palette-color-history" checksum="4b619e4bcc05b333390a6274dbdefa76">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Bears.gpl" checksum="e82e818c20ac12bdd21049924ea2d1e7">
@@ -1552,6 +1552,69 @@
   <resource identifier="${gimp_data_dir}/palettes/Web.gpl" checksum="f02e8dfa23d01d6acfbab7f895c2dd16">
   </resource>
 
+  <resource identifier="Arial" checksum="(null)">
+  </resource>
+
+  <resource identifier="Arial Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Arial Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Arial Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Arial Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bahnschrift" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bahnschrift" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bahnschrift Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bahnschrift Bold Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bahnschrift Bold Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bahnschrift Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bahnschrift Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bahnschrift Light Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bahnschrift Light Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bahnschrift Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bahnschrift Semi-Bold Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bahnschrift Semi-Bold Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bahnschrift Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bahnschrift Semi-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bahnschrift Semi-Light Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bahnschrift Semi-Light Semi-Condensed" checksum="(null)">
+  </resource>
+
   <resource identifier="C059" checksum="(null)">
   </resource>
 
@@ -1562,6 +1625,57 @@
   </resource>
 
   <resource identifier="C059 Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Calibri" checksum="(null)">
+  </resource>
+
+  <resource identifier="Calibri Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Calibri Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Calibri Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Calibri Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Calibri Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Cambria" checksum="(null)">
+  </resource>
+
+  <resource identifier="Cambria Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Cambria Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Cambria Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Cambria Math" checksum="(null)">
+  </resource>
+
+  <resource identifier="Candara" checksum="(null)">
+  </resource>
+
+  <resource identifier="Candara" checksum="(null)">
+  </resource>
+
+  <resource identifier="Candara Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Candara Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Candara Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Candara Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Cantarell" checksum="(null)">
@@ -1580,6 +1694,72 @@
   </resource>
 
   <resource identifier="Cantarell Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Comic Sans MS" checksum="(null)">
+  </resource>
+
+  <resource identifier="Comic Sans MS Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Comic Sans MS Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Comic Sans MS Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Consolas" checksum="(null)">
+  </resource>
+
+  <resource identifier="Consolas Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Consolas Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Consolas Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Constantia" checksum="(null)">
+  </resource>
+
+  <resource identifier="Constantia Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Constantia Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Constantia Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Corbel" checksum="(null)">
+  </resource>
+
+  <resource identifier="Corbel Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Corbel Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Corbel Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Corbel Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Corbel Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Courier New" checksum="(null)">
+  </resource>
+
+  <resource identifier="Courier New Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Courier New Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Courier New Italic" checksum="(null)">
   </resource>
 
   <resource identifier="D050000L" checksum="(null)">
@@ -1639,6 +1819,12 @@
   <resource identifier="FiraCode Nerd Font weight=450" checksum="(null)">
   </resource>
 
+  <resource identifier="Franklin Gothic Medium," checksum="(null)">
+  </resource>
+
+  <resource identifier="Franklin Gothic Medium, Italic" checksum="(null)">
+  </resource>
+
   <resource identifier="FreeMono" checksum="(null)">
   </resource>
 
@@ -1675,6 +1861,27 @@
   <resource identifier="FreeSerif Italic" checksum="(null)">
   </resource>
 
+  <resource identifier="Gabriola" checksum="(null)">
+  </resource>
+
+  <resource identifier="Georgia" checksum="(null)">
+  </resource>
+
+  <resource identifier="Georgia Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Georgia Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Georgia Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Impact Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Ink Free" checksum="(null)">
+  </resource>
+
   <resource identifier="Liberation Mono" checksum="(null)">
   </resource>
 
@@ -1709,6 +1916,18 @@
   </resource>
 
   <resource identifier="Liberation Serif Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Lucida Console Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Lucida Sans Unicode" checksum="(null)">
+  </resource>
+
+  <resource identifier="Marlett Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Microsoft Sans Serif" checksum="(null)">
   </resource>
 
   <resource identifier="Monospace" checksum="(null)">
@@ -3604,6 +3823,45 @@
   <resource identifier="P052 Italic" checksum="(null)">
   </resource>
 
+  <resource identifier="Palatino Linotype" checksum="(null)">
+  </resource>
+
+  <resource identifier="Palatino Linotype Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Palatino Linotype Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Palatino Linotype Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Slab" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Slab Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Slab Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Slab Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Slab Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Slab Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Slab Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Slab weight=250" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Slab weight=250" checksum="(null)">
+  </resource>
+
   <resource identifier="Sans-serif" checksum="(null)">
   </resource>
 
@@ -3616,6 +3874,117 @@
   <resource identifier="Sans-serif Italic" checksum="(null)">
   </resource>
 
+  <resource identifier="Segoe Fluent Icons" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe MDL2 Assets" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe Print" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe Print Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe Script" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe Script Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Emoji" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Heavy Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Historic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Semi-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Semi-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Symbol" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Variable" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Variable" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Variable" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Variable" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Variable Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Variable Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Variable Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Variable Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Variable Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Variable Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Variable Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Variable Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Variable Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Variable Semi-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Variable Semi-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Segoe UI Variable Semi-Light" checksum="(null)">
+  </resource>
+
   <resource identifier="Serif" checksum="(null)">
   </resource>
 
@@ -3626,6 +3995,120 @@
   </resource>
 
   <resource identifier="Serif Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Sitka Semi-Bold Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Source Code Pro" checksum="(null)">
@@ -3721,6 +4204,42 @@
   <resource identifier="Standard Symbols PS" checksum="(null)">
   </resource>
 
+  <resource identifier="Sylfaen" checksum="(null)">
+  </resource>
+
+  <resource identifier="Symbol" checksum="(null)">
+  </resource>
+
+  <resource identifier="Tahoma" checksum="(null)">
+  </resource>
+
+  <resource identifier="Tahoma Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Times New Roman," checksum="(null)">
+  </resource>
+
+  <resource identifier="Times New Roman, Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Times New Roman, Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Times New Roman, Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Trebuchet MS" checksum="(null)">
+  </resource>
+
+  <resource identifier="Trebuchet MS Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Trebuchet MS Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Trebuchet MS Italic" checksum="(null)">
+  </resource>
+
   <resource identifier="URW Bookman Light" checksum="(null)">
   </resource>
 
@@ -3743,6 +4262,24 @@
   </resource>
 
   <resource identifier="URW Gothic Semi-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Verdana" checksum="(null)">
+  </resource>
+
+  <resource identifier="Verdana Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Verdana Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Verdana Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Webdings" checksum="(null)">
+  </resource>
+
+  <resource identifier="Wingdings" checksum="(null)">
   </resource>
 
   <resource identifier="Z003 Medium Italic" checksum="(null)">
