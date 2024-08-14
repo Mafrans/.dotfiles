@@ -5,12 +5,11 @@
     font-family: FiraCode Nerd Font;
 }
 
-
 window#waybar {
     background-color: transparent;
     color: @pink200;
     transition-property: background-color;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
     font-size: 14px;
 }
 
