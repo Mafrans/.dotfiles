@@ -5,6 +5,7 @@ export MPLBACKEND=module://matplotlib-backend-kitty
 export PYTHONPATH="$PYTHONPATH:/home/malte/python-modules"
 export NNN_PLUG="f:fzopen;v:preview-tabbed;p:mocq"
 export PATH="$PATH:$(go env GOPATH)/bin"
+export EDITOR=nvim
 
 # Aliases
 alias s="kitten ssh"
