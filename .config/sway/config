@@ -20,7 +20,7 @@ set $background ~/.config/sway/backgrounds/celeste-1.png
 
 gaps inner 0
 
-workspace 1 output eDP-1
+workspace 1 output DP-2 
 
 ### Wallpaper
 output DP-2 {
@@ -76,6 +76,7 @@ for_window [class="Steam"] floating enable
 for_window [instance="Godot_ProjectList"] floating enable
 for_window [title="Save Scene As..."] floating enable
 for_window [class="ONLYOFFICE Desktop Editors"] floating enable
+for_window [class="Slack"] floating enable
 for_window [class="qBittorrent"] floating enable
 for_window [class="FLTK"] floating enable
 for_window [class="Tk"] floating enable
