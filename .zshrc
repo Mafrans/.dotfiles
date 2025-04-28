@@ -5,6 +5,11 @@ export MPLBACKEND=module://matplotlib-backend-kitty
 export PYTHONPATH="$PYTHONPATH:/home/malte/python-modules"
 export NNN_PLUG="f:fzopen;v:preview-tabbed;p:mocq"
 export PATH="$PATH:$(go env GOPATH)/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/code/tdde47-labbar/utils"
+export ANDROID_HOME="$HOME/Android/Sdk"
+export FLYCTL_INSTALL="/home/malte/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export EDITOR=nvim
 
 # Aliases
@@ -13,22 +18,24 @@ alias icat="kitten icat"
 alias rg="rg --hyperlink-format=kitty"
 alias ls="ls -a"
 alias ll="ls -la"
+alias zed="zeditor"
 alias vpnport="~/scripts/natpmpc_script.sh"
-alias rm="trash"
+#alias rm="trash"
 alias nethack="kitty -o window_margin_width=16 -o font_family=\"Mx437 IBM VGA 9x16\" luit -encoding 'CP437' nethack -ibm"
 alias files="gtk-launch org.gnome.Nautilus"
 
 # Plugins
-
 autoload -U down-line-or-beginning-search
 autoload -U up-line-or-beginning-search
+
+## ASDF
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+autoload -Uz compinit && compinit
 
 ## ZSH antidote
 source "/usr/share/zsh-antidote/antidote.zsh"
 antidote load
-
-## ASDF-VM
-. /opt/asdf-vm/asdf.sh
 
 ## ZOxide
 eval "$(zoxide init zsh --cmd cd)"
@@ -56,3 +63,4 @@ bindkey -e            '^[[Z'    menu-select           # shift+tab
 #bindkey -e            '^[[B'    menu-select           # downarrow
 bindkey -M menuselect '\t'      menu-complete         # tab (menuselect)
 bindkey -M menuselect '^[[Z'    reverse-menu-complete # shift+tab (menuselect)
+
