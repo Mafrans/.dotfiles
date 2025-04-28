@@ -15,7 +15,6 @@ set $term kitty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 
-#set $menu tofi-drun | xargs swaymsg exec --
 set $menu LD_LIBRARY_PATH="/usr/local/lib" walker -n
 set $background ~/.config/sway/backgrounds/celeste-1.png
 
@@ -24,9 +23,8 @@ gaps inner 0
 workspace 1 output DP-2 
 
 ### Wallpaper
-output eDP-1 {
+output DP-2 {
     bg $background fill
-    scale 1.5
 }
 
 # autostart
@@ -112,11 +110,17 @@ for_window [title="Create New Node"] floating enable
 for_window [title="Create Script"] floating enable
 for_window [title="Inherit Object"] floating enable
 
+for_window [title="Espanso Sync Tool"] \
+    floating enable, \
+    border none, \
+    resize set 100 100, \
+    move position -100 -100
+
+
 client.focused_inactive #1e293b #1e293b #64748b
 client.background       #1e293b #1e293b #64748b
 client.unfocused        #1e293b #1e293b #64748b
 client.focused          #475569 #475569 #f1f5f9
-
 
 ### Clipboard
 exec wl-paste -t text --watch clipman store --no-persist

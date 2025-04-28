@@ -1,26 +1,26 @@
 @import "../colors.css";
 
 * {
-  /* `otf-font-awesome` is required to be installed for icons */
-  font-family: FiraCode Nerd Font;
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FiraCode Nerd Font;
 }
 
 window#waybar {
-  background-color: transparent;
-  color: @pink200;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  font-size: 14px;
+    background-color: transparent;
+    color: @pink200;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    font-size: 14px;
 }
 
 window#waybar > box {
-  background-color: @slate900;
-  /* margin: 6px; */
-  /* border-radius: 999px; */
+    background-color: @slate900;
+    /* margin: 6px; */
+    /* border-radius: 999px; */
 }
 
 window#waybar.hidden {
-  opacity: 0.2;
+    opacity: 0.2;
 }
 
 /*
@@ -37,43 +37,43 @@ button {
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
-  background: inherit;
-  box-shadow: inherit;
-  text-shadow: inherit;
+    background: inherit;
+    box-shadow: inherit;
+    text-shadow: inherit;
 }
 
 #workspaces {
-  padding: 0 6px;
+    padding: 0 6px;
 }
 
 #workspaces button {
-  padding: 0;
-  font-size: 16px;
-  font-weight: 400;
-  margin: 6px;
-  background-color: transparent;
-  color: @slate800;
-  transition: color 0.125s ease-out;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 6px;
+    background-color: transparent;
+    color: @slate800;
+    transition: color 0.125s ease-out;
 }
 
 #workspaces button:hover {
-  background: transparent;
-  border-color: transparent;
-  color: @slate700;
+    background: transparent;
+    border-color: transparent;
+    color: @slate700;
 }
 
 #workspaces button.focused,
 #workspaces button.focused:hover {
-  color: @pink500;
-  font-weight: 900;
+    color: @pink500;
+    font-weight: 900;
 }
 
 #workspaces button.urgent {
 }
 
 #mode {
-  background-color: @pink600;
-  border-bottom: 3px solid @pink800;
+    background-color: @pink600;
+    border-bottom: 3px solid @pink800;
 }
 
 #clock,
@@ -93,36 +93,36 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #mpd {
-  font-size: 13px;
-  padding-left: 26px;
-  padding-right: 6px;
-  color: @pink400;
+    font-size: 13px;
+    padding-left: 26px;
+    padding-right: 6px;
+    color: @pink400;
 }
 
 #scratchpad {
-  padding: 0 6px;
-  font-weight: 900;
+    padding: 0 6px;
+    font-weight: 900;
 }
 
 #scratchpad.empty {
-  font-weight: 400;
-  color: @pink900;
+    font-weight: 400;
+    color: @pink900;
 }
 
 .modules-right {
-  padding-right: 24px;
+    padding-right: 24px;
 }
 
 #tray {
-  padding-left: 24px;
+    padding-left: 24px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
-  margin-right: 0;
+    margin-right: 0;
 }

@@ -8,12 +8,12 @@ local signatureConfig = require "config.signature"
 lazy.setup({
     {
         "neovim/nvim-lspconfig",
-        config = cmpConfig
+        config = lspConfig
     },
-    { 
-      "ray-x/lsp_signature.nvim",
-      event = "VeryLazy",
-      config = signatureConfig,
+    {
+        "ray-x/lsp_signature.nvim",
+        event = "VeryLazy",
+        config = signatureConfig,
     },
     { "hoob3rt/lualine.nvim" },
     { "preservim/nerdtree" },
@@ -29,16 +29,12 @@ lazy.setup({
     { "hrsh7th/cmp-cmdline" },
     {
         "hrsh7th/nvim-cmp",
-        config = lspConfig
+        config = cmpConfig
     },
     { "nvarner/typst-lsp" },
-    { "kaarmu/typst.vim", ft="typst", lazy=false },
+    { "kaarmu/typst.vim",        ft = "typst", lazy = false },
     { "L3MON4D3/LuaSnip" },
     { "saadparwaiz1/cmp_luasnip" },
-    {
-        "rakr/vim-one",
-        lazy = false
-    },
     {
         "Mofiqul/dracula.nvim",
         lazy = false
@@ -54,8 +50,8 @@ lazy.setup({
         cmd = "TSUpdate",
         config = treesitterConfig
     },
-    { 
-        "folke/trouble.nvim", 
+    {
+        "folke/trouble.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
     },
     { "nvim-lua/plenary.nvim" },
@@ -68,6 +64,5 @@ lazy.setup({
     {
         "zbirenbaum/copilot-cmp",
         after = { "copilot.lua", "nvim-cmp" },
-    },
-    { "Thyrum/vim-stabs" }
+    }
 })
