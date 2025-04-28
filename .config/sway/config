@@ -110,6 +110,13 @@ for_window [title="Create New Node"] floating enable
 for_window [title="Create Script"] floating enable
 for_window [title="Inherit Object"] floating enable
 
+for_window [title="Espanso Sync Tool"] \
+    floating enable, \
+    border none, \
+    resize set 100 100, \
+    move position -100 -100
+
+
 client.focused_inactive #1e293b #1e293b #64748b
 client.background       #1e293b #1e293b #64748b
 client.unfocused        #1e293b #1e293b #64748b
