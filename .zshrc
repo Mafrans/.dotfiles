@@ -10,6 +10,7 @@ export PATH="$PATH:$HOME/code/tdde47-labbar/utils"
 export ANDROID_HOME="$HOME/Android/Sdk"
 export FLYCTL_INSTALL="/home/malte/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
+export OPENROUTER_API_KEY="$(cat /home/malte/.openrouter-key)"
 export EDITOR=nvim
 
 # Aliases
@@ -20,6 +21,7 @@ alias ls="ls -a"
 alias ll="ls -la"
 alias zed="zeditor"
 alias vpnport="~/scripts/natpmpc_script.sh"
+alias mycli="mise x python@3.13.9 -- mycli"
 
 alias nethack="kitty -o window_margin_width=16 -o font_family=\"Mx437 IBM VGA 9x16\" luit -encoding 'CP437' nethack -ibm"
 alias files="gtk-launch org.gnome.Nautilus"
