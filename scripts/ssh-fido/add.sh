@@ -10,12 +10,6 @@ if ssh-add -l | grep -q "$FINGERPRINT"; then
     exit 0
 fi
 
-# Notify (optional)
-if command -v notify-send >/dev/null 2>&1; then
-    echo "Adding key"
-    notify-send "SSH Key" "Adding resident FIDO2 key. Please touch the key when prompted."
-fi
-
 # Add all resident keys. The PIN will be supplied automatically.
 ssh-add -K
 
