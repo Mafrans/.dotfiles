@@ -1,0 +1,10 @@
+[Unit]
+Description=Auto-add FIDO2 SSH key
+
+[Service]
+Type=oneshot
+Environment=DISPLAY=:0
+ExecStart=%h/scripts/ssh-fido/add.sh
+
+[Install]
+WantedBy=default.target

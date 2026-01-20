@@ -10,8 +10,9 @@ export PATH="$PATH:$HOME/code/tdde47-labbar/utils"
 export ANDROID_HOME="$HOME/Android/Sdk"
 export FLYCTL_INSTALL="/home/malte/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
-export OPENROUTER_API_KEY="$(cat /home/malte/.openrouter-key)"
+export OPENROUTER_API_KEY="$(cat /home/malte/.openrouter-key 2>/dev/null)"
 export EDITOR=nvim
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
 
 # Aliases
 alias s="kitten ssh"
@@ -29,11 +30,6 @@ alias files="gtk-launch org.gnome.Nautilus"
 # Plugins
 autoload -U down-line-or-beginning-search
 autoload -U up-line-or-beginning-search
-
-## ASDF
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
-autoload -Uz compinit && compinit
 
 ## ZSH antidote
 source "/usr/share/zsh-antidote/antidote.zsh"
@@ -65,4 +61,3 @@ bindkey -e            '^[[Z'    menu-select           # shift+tab
 #bindkey -e            '^[[B'    menu-select           # downarrow
 bindkey -M menuselect '\t'      menu-complete         # tab (menuselect)
 bindkey -M menuselect '^[[Z'    reverse-menu-complete # shift+tab (menuselect)
-
