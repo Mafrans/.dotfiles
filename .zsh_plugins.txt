@@ -1,1 +1,5 @@
-marlonrichert/zsh-autocomplete
+# marlonrichert/zsh-autocomplete
+zsh-users/zsh-completions
+Aloxaf/fzf-tab
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-syntax-highlighting
