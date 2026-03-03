@@ -16,7 +16,7 @@ export EDITOR=nvim
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
 export _JAVA_OPTIONS="-Dsun.java2d.uiScale=2"
 
-systemctl --user import-environment SSH_AUTH_SOCK 
+systemctl --user import-environment SSH_AUTH_SOCK
 
 # Aliases
 alias s="kitten ssh"
