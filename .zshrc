@@ -8,6 +8,7 @@ export PATH="$PATH:$GOBIN"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/code/tdde47-labbar/utils"
 export PATH="$PATH:$HOME/.dotnet/tools"
+export PATH="$PATH:$HOME/cc-haha/bin"
 export ANDROID_HOME="$HOME/Android/Sdk"
 export FLYCTL_INSTALL="/home/malte/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
@@ -35,7 +36,8 @@ alias syncthing-status="~/scripts/syncthing-quick-status.sh"
 alias nethack="kitty -o window_margin_width=16 -o font_family=\"Mx437 IBM VGA 9x16\" luit -encoding 'CP437' nethack -ibm"
 alias files="gtk-launch org.gnome.Nautilus"
 alias compose="docker compose"
-alias claude="$HOME/cc-haha/bin/claude-haha"
+alias claude="claude-haha"
+
 # Completion
 autoload -U down-line-or-beginning-search
 autoload -U up-line-or-beginning-search
@@ -73,4 +75,4 @@ bindkey -e            '^[[1;5D' backward-word         # ctrl+leftarrow
 eval "$(/usr/bin/mise activate zsh)"
 
 ## ZOxide
-#eval "$(zoxide init zsh --cmd cd)"
+eval "$(zoxide init zsh --cmd cd)"
