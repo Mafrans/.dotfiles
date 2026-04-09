@@ -19,16 +19,19 @@ export _JAVA_OPTIONS="-Dsun.java2d.uiScale=2"
 systemctl --user import-environment SSH_AUTH_SOCK
 
 # Aliases
-alias s="kitten ssh"
+alias kssh="kitten ssh"
+alias tssh="tailscale ssh"
 alias icat="kitten icat"
 alias rg="rg --hyperlink-format=kitty"
 alias ls="ls -a"
 alias ll="ls -la"
 alias zed="zeditor"
 alias vpnport="~/scripts/natpmpc_script.sh"
-alias mycli="mise x python@3.13.9 -- mycli"/
+alias mycli="mise x python@3.13.9 -- mycli"
 alias rm="cowsay 'This command permanently deletes files, use trash-put instead. If you really want to remove permanently, use unlink or \\rm.'; false"
-alias tssh="tailscale ssh"
+alias 0x0st="curl -F file=@- https://0x0.st"
+alias syncthing-status="~/scripts/syncthing-quick-status.sh"
+
 alias nethack="kitty -o window_margin_width=16 -o font_family=\"Mx437 IBM VGA 9x16\" luit -encoding 'CP437' nethack -ibm"
 alias files="gtk-launch org.gnome.Nautilus"
 alias compose="docker compose"
