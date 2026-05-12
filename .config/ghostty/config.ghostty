@@ -1,0 +1,11 @@
+theme = Dracula
+font-family = Monaspace Neon NF
+font-family-italic = Monaspace Xenon NF
+font-size = 14
+background-image = ~/.config/ghostty/background.jpg
+background-image-opacity = 0.8
+background-image-fit = cover
+background = #000
+window-padding-x = 3
+window-padding-y = 6
+window-decoration = none
