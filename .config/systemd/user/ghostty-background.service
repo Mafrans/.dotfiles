@@ -1,0 +1,6 @@
+[Unit]
+Description=Update Ghostty Background
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/nu %h/.config/ghostty/update-background.nu
