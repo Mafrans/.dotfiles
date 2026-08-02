@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+
 export SSH_ASKPASS="$HOME/scripts/ssh-fido/askpass.sh"
 export SSH_ASKPASS_REQUIRE="prefer"
 KEY="$HOME/.ssh/id_ed25519_sk_rk.pub"
