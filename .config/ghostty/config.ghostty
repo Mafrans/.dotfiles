@@ -1,4 +1,5 @@
-theme = 12-bit Rainbow
+command = nu
+theme = Dracula
 font-family = Monaspace Neon NF
 font-family-italic = Monaspace Xenon NF
 font-size = 13
