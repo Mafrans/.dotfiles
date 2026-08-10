@@ -1,3 +1,9 @@
+# Vendor scripts
+source ./vendor/starship.nu
+source ./vendor/zoxide.nu
+source ./vendor/mise.nu
+source ./vendor/fzf.nu
+
 # Completers
 use completion/carapace_completer.nu  *
 use completion/fish_completer.nu  *
@@ -25,38 +31,19 @@ $env.config.completions.external = {
   completer: $completer
 }
 
-$env.path ++= ["~/.local/bin", "~/.cargo/bin"]
-
-$env.PKG_CONFIG_PATH = "/usr/local/lib/pkgconfig"
-$env.LD_LIBRARY_PATH = "/usr/local/lib"
-$env.ANDROID_HOME = "~/Android/Sdk"
-
-$env._JAVA_OPTIONS = "-Dsun.java2d.uiScale=2"
+$env.path ++= ["~/.local/bin", "~/.cargo/bin", "~/.kilo/bin"]
 $env.config.show_banner = false
 $env.config.table.mode = "none"
-$env.path ++= ["~/.kilo/bin"]
 
-def "agy" [] {
-  cd $"($env.HOME)/.gemini/antigravity-cli/workspace"
-  ^agy --sandbox
-}
 alias bazel = bazelisk
 alias tssh = tailscale ssh
 alias ls = ls -a
 alias ll = ls -la
 alias rg = rg -. -g '!/dev' -g '!/proc'
 alias zed = zeditor
-alias rm = do { cowsay 'This command permanently deletes files, use trash-put instead. If you really want to remove permanently, use unlink or ^rm.' }
->>>>>>> Stashed changes
 alias 0x0st = curl -F file=@- https://0x0.st
 alias compose = docker compose
 alias mx = mise x
 alias htop = btop
 alias top = btop
 def rm [...rest] { cowsay 'This command permanently deletes files, use trash instead. If you really want to remove permanently, use unlink or \rm.' }
-
-# Vendor scripts
-source ./vendor/starship.nu
-source ./vendor/zoxide.nu
-source ./vendor/mise.nu
-source ./vendor/fzf.nu
