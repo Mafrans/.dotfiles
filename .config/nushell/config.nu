@@ -31,7 +31,7 @@ $env.config.completions.external = {
   completer: $completer
 }
 
-$env.path ++= [$"($env.HOME)/.kilo/bin", $"($env.HOME)/.local/bin", $"($env.HOME)/.cargo/bin", $"($env.HOME)/.local/share/pnpm/bin", "/usr/games"]
+$env.path ++= [$"($env.HOME)/.kilo/bin", $"($env.HOME)/.local/bin", $"($env.HOME)/.cargo/bin", $"($env.HOME)/.local/share/pnpm/bin", "/usr/games", "/snap/bin/"]
 
 # Aliases
 alias bazel = bazelisk
@@ -48,3 +48,10 @@ alias mx = mise x
 alias htop = btop
 alias top = btop
 def --wrapped rm [...rest] { cowsay 'This command permanently deletes files, use trash instead. If you really want to remove permanently, use unlink or ^rm.' }
+def --wrapped mise [...rest] {
+  if $rest.0 == "en" {
+    ^mise en --shell=nu ...($rest | slice 1..)
+  } else {
+    ^mise ...$rest
+  }
+}
