@@ -1,0 +1,2 @@
+trash .config/nushell/history.txt
+git status

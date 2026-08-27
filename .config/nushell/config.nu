@@ -41,6 +41,7 @@ alias ls = ls -a
 alias ll = ls -la
 alias rg = rg -. -g '!/dev' -g '!/proc'
 alias zed = zeditor
+alias rm = do { cowsay 'This command permanently deletes files, use trash-put instead. If you really want to remove permanently, use unlink or ^rm.' }
 alias 0x0st = curl -F file=@- https://0x0.st
 alias compose = docker compose
 alias mx = mise x
