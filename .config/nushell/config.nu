@@ -31,20 +31,20 @@ $env.config.completions.external = {
   completer: $completer
 }
 
-$env.path ++= ["~/.local/bin", "~/.cargo/bin", "~/.kilo/bin"]
-$env.config.show_banner = false
-$env.config.table.mode = "none"
+$env.path ++= [$"($env.HOME)/.kilo/bin", $"($env.HOME)/.local/bin", $"($env.HOME)/.cargo/bin", $"($env.HOME)/.local/share/pnpm/bin", "/usr/games"]
 
+# Aliases
 alias bazel = bazelisk
 alias tssh = tailscale ssh
-alias ls = ls -a
+def --wrapped ls [...rest] {
+    ^ls --color=auto -a ...$rest
+}
 alias ll = ls -la
 alias rg = rg -. -g '!/dev' -g '!/proc'
 alias zed = zeditor
-alias rm = do { cowsay 'This command permanently deletes files, use trash-put instead. If you really want to remove permanently, use unlink or ^rm.' }
 alias 0x0st = curl -F file=@- https://0x0.st
 alias compose = docker compose
 alias mx = mise x
 alias htop = btop
 alias top = btop
-def rm [...rest] { cowsay 'This command permanently deletes files, use trash instead. If you really want to remove permanently, use unlink or \rm.' }
+def --wrapped rm [...rest] { cowsay 'This command permanently deletes files, use trash instead. If you really want to remove permanently, use unlink or ^rm.' }
