@@ -13,6 +13,7 @@ gst-plugins-ugly
 imagemagick
 imv
 lazygit
+libsecret
 less
 mise
 neofetch
@@ -20,11 +21,11 @@ neovim
 nnn
 nushell
 ripgrep
-secret-tool
 starship
 stow
 tailscale
 tealdeer
+trash-cli
 unzip
 vlc
 zathura
