@@ -5,3 +5,4 @@ $env.PKG_CONFIG_PATH = "/usr/local/lib/pkgconfig"
 $env.LD_LIBRARY_PATH = "/usr/local/lib"
 $env._JAVA_OPTIONS = "-Dsun.java2d.uiScale=2"
 $env.EDITOR = "nvim"
+$env.HF_TOKEN = (secret-tool lookup token HuggingFace)

@@ -1,0 +1,50 @@
+#!/bin/bash
+# Tailscale down for the duration of a command, then up again.
+# With --exit-node, only drop the exit node instead.
+# Usage: untailscale [--exit-node] -- command [args...]
+
+# Exit node is addressed by its Tailscale IP (stable for the node).
+exit_node=$(tailscale status --json 2>/dev/null \
+  | jq -r '.ExitNodeStatus.TailscaleIPs[0] // empty' \
+  | cut -d/ -f1)
+
+exit_node_mode=false
+while [ -n "$1" ]; do
+  case "$1" in
+    --exit-node) exit_node_mode=true; shift ;;
+    --) shift; break ;;
+    *) echo "untailscale: unknown option: $1" >&2
+       echo "Usage: untailscale [--exit-node] -- command [args...]" >&2
+       exit 1 ;;
+  esac
+done
+if [ $# -eq 0 ]; then
+  echo "untailscale: missing command" >&2
+  echo "Usage: untailscale [--exit-node] -- command [args...]" >&2
+  exit 1
+fi
+
+restore() {
+  if $exit_node_mode; then
+    if [ -n "$exit_node" ]; then
+      tailscale set --exit-node="$exit_node" >/dev/null 2>&1
+    fi
+  else
+    tailscale up >/dev/null 2>&1
+  fi
+}
+trap restore EXIT
+trap 'exit 130' INT
+trap 'exit 143' TERM
+
+if $exit_node_mode; then
+  if [ -n "$exit_node" ] && ! tailscale set --exit-node=; then
+    echo "untailscale: couldn't clear exit node." >&2
+    echo "Run once: sudo tailscale set --operator=$USER" >&2
+    exit 1
+  fi
+else
+  tailscale down >/dev/null 2>&1
+fi
+
+"$@"
