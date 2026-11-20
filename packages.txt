@@ -13,6 +13,7 @@ cryptsetup
 downgrade
 duf
 ethtool
+exa
 ferdium
 ghostty
 glances
